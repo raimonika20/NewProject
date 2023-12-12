@@ -4,6 +4,10 @@ body, html {
   font-family: Arial;
 }
 
+.tablink:hover {
+  background-color: #1e3d52;
+}
+
  /* Style for the toggle switch */
  .switch {
   position: relative;

@@ -1,0 +1,17 @@
+{
+	"tabOptions": [
+		{
+			"id": "home",
+			"type": "Home"
+			
+		},
+		{
+			"id": "about",
+			"type": "About"
+		},
+		{
+			"id": "contact",
+			"type": "Contact"
+		}
+	]
+}
