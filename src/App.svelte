@@ -1,8 +1,8 @@
 <script>
   import { onMount } from "svelte";
-  import options from "./data.json";
+  import tabs from "./data.json";
 
-  let tabOptions = options.tabOptions;
+  let tabOptions = tabs.tabOptions;
   let activeTab = "Home";
   let selectedOption = null;
 
@@ -20,7 +20,6 @@
     }, 2000);
   }
 
-  // Automatically click the default tab on component mount
   onMount(() => {
     openPage(activeTab);
   });
@@ -38,7 +37,7 @@
 
   {#each tabOptions as tabOption}
     {#if activeTab === tabOption.type}
-      <div id={tabOption.type} class="tabcontent text-black block p-10 h-full">
+      <div class="tabcontent text-black block p-10 h-full">
         <h3>{tabOption.type}</h3>
 
         <!-- Add radio buttons here -->
@@ -50,23 +49,32 @@
               value="Option 1"
               on:change={handleRadioChange}
               checked={selectedOption === "Option 1"}
-            />Option 1
+            />{tabOption.option1}
             {#if selectedOption === "Option 1"}<span
                 class="checkmark mr-2 text-[#008000] text-base font-extrabold"
-                >&#10003;</span
+                ><img
+                  class="checkmark-img w-5 h-5"
+                  src="src/assets/accept.png"
+                  alt=""
+                /></span
               >{/if}
           </label>
-          <label class="radio-option">
+
+          <label class="radio-option flex items-center mb-2">
             <input
               type="radio"
               name="option"
               value="Option 2"
               on:change={handleRadioChange}
               checked={selectedOption === "Option 2"}
-            />Option 2
+            />{tabOption.option2}
             {#if selectedOption === "Option 2"}<span
-                class="checkmark mr-2 text-[#008000] text-base font-extrabold"
-                >&#10003;</span
+                class="checkmark mr-1 text-[#008000] text-base font-extrabold"
+                ><img
+                  class="checkmark-img w-5 h-5"
+                  src="src/assets/accept.png"
+                  alt=""
+                /></span
               >{/if}
           </label>
         </div>

@@ -1,26 +1,9 @@
-body, html {
+/* body, html {
   height: 100%;
   margin: 0;
   font-family: Arial;
-}
+} */
 
 .tablink:hover {
   background-color: #1e3d52;
 }
-/* .radio-container {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-} */
-
-/* .radio-option {
-  display: flex;
-  align-items: center;
-  margin-bottom: 5px;
-} */
-
-/* .checkmark {
-  color: #008000;
-  font-size: 24px;
-  margin-right: 8px;
-} */

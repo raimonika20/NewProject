@@ -2,17 +2,24 @@
 	"tabOptions": [
 		{
 			"id": "home",
-			"type": "Home"
+			"type": "Home",
+			"option1": "Option 1",
+			"option2": "Option 2"
+
 			
 			
 		},
 		{
 			"id": "about",
-			"type": "About"
+			"type": "About",
+			"option1": "Option 1",
+			"option2": "Option 2"
 		},
 		{
 			"id": "contact",
-			"type": "Contact"
+			"type": "Contact",
+			"option1": "Option 1",
+			"option2": "Option 2"
 		}
 	]
 }
