@@ -3,23 +3,21 @@
 		{
 			"id": "home",
 			"type": "Home",
-			"option1": "Option 1",
-			"option2": "Option 2"
-
-			
+			"options": ["Dogs","Cats","Parrot","Goldfish"
+		]		
 			
 		},
 		{
 			"id": "about",
 			"type": "About",
-			"option1": "Option 1",
-			"option2": "Option 2"
+			"options": ["Dogs","Cats","Parrot","Goldfish"
+		]
 		},
 		{
 			"id": "contact",
 			"type": "Contact",
-			"option1": "Option 1",
-			"option2": "Option 2"
+			"options": ["Dogs","Cats","Parrot","Goldfish"
+		]
 		}
 	]
 }
